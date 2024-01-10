@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HackerNewsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:HackerNews.Server.Controllers.HackerNewsController.Get(System.String)">
+            <summary>
+            To get 200 hacker news stories
+            </summary>
+            <param name="searchInput"></param>
+            <response code="200">Returns the hacker news stories</response>
+            <response code="500">Server Error</response>
+            <returns>ResponseMessage</returns>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.By">
+            <summary>
+            By of story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Descendants">
+            <summary>
+            Descendants for story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Id">
+            <summary>
+            Id of Story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Score">
+            <summary>
+            Score of story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Time">
+            <summary>
+            Time of story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Title">
+            <summary>
+            Title of  story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Type">
+            <summary>
+            Type of story
+            </summary>
+        </member>
+        <member name="P:HackerNews.Server.Models.StoryDto.Url">
+            <summary>
+            Url of story
+            </summary>
+        </member>
+        <member name="M:HackerNews.Server.Services.HackerNewsServices.GetStoryByID(System.Int32)">
+            <summary>
+            to fetch the story by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HackerNews.Server.Services.HackerNewsServices.NewestStories">
+            <summary>
+            get all stories Ids
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HackerNews.Server.Services.HackerNewsServices.GetNewestStories">
+            <summary>
+            get all stories from hacker news api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:HackerNewsAPI.Models.ResponseMessage.Status">
+            <summary>
+            Show the status 
+            </summary>
+        </member>
+        <member name="P:HackerNewsAPI.Models.ResponseMessage.Message">
+            <summary>
+            Response message
+            </summary>
+        </member>
+        <member name="P:HackerNewsAPI.Models.ResponseMessage.Result">
+            <summary>
+            Get list of stories
+            </summary>
+        </member>
+    </members>
+</doc>
