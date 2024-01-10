@@ -27,7 +27,6 @@ namespace HackerNews.Server.Controllers
         /// <returns>ResponseMessage</returns>
         [HttpGet]
         [Route("GetStories")]
-        [ProducesResponseType<List<StoryDto>>(StatusCodes.Status200OK)]
         public async Task<IActionResult> Get(string searchInput = "")
         {
             List<StoryDto> hackerStories = new List<StoryDto>();
